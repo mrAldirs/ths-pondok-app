@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:text="Nama"
+            android:maxLines="1"
+            android:layout_marginStart="8dp"
+            android:id="@+id/adpNamaMain"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adpKelasMain"
+            android:text="Kelas A"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adpNisMain"
+            android:text="Nis"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lavender"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="12dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

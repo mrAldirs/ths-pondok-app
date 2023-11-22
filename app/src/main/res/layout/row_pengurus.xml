@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPengurus"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        android:layout_margin="8dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/lavender"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/adpNamaPengurus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:text="Nama"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/adpLevelPengurus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengurus"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/adpNoTelpPengurus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="081249710599"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

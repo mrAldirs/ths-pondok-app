@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_absensi"
+        android:icon="@drawable/absensi"
+        android:title="Absensi Santri"/>
+
+    <item
+        android:id="@+id/nav_penilaian"
+        android:icon="@drawable/penilaian"
+        android:title="Penilaian"/>
+
+    <item
+        android:id="@+id/nav_catatan"
+        android:icon="@drawable/catatan"
+        android:title="Catatan Hafalan"/>
+
+    <item
+        android:id="@+id/nav_aboutUs"
+        android:icon="@drawable/info"
+        android:title="About Us"/>
+
+    <item
+        android:title="Pengaturan"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/login"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+</menu>

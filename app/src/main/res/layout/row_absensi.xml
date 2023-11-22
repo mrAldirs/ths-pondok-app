@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                android:backgroundTint="#00FFFFFF"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/adpNamaAbsensi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="1"
+                    android:text="Nama"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adpNisAbsensi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="28dp"
+                    android:maxLines="1"
+                    android:text="NIS"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/absensiHadir"
+                android:layout_width="36dp"
+                android:layout_height="56dp"
+                android:padding="6dp"
+                android:src="@color/white"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/absensiIzin"
+                android:layout_width="36dp"
+                android:layout_height="56dp"
+                android:padding="6dp"
+                android:src="@color/white"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/absensiSakit"
+                android:layout_width="36dp"
+                android:layout_height="56dp"
+                android:padding="6dp"
+                android:src="@color/white"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/absensiAlpha"
+                android:layout_width="36dp"
+                android:layout_height="56dp"
+                android:padding="6dp"
+                android:src="@color/white"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="1dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

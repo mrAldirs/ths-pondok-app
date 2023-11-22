@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ths_pondok"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Admin -->
+        <activity android:name=".Admin.MainAdminAtivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.MasterPengurusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.RegistrasiPengurusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Admin.EditPengurusActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Hafalan -->
+        <activity android:name=".CatatanHafalan.HafalanPerkelasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CatatanHafalan.HafalanDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CatatanHafalan.HafalanInsertActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CatatanHafalan.HafalanEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CatatanHafalan.HafalanPersantriActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Absensi -->
+        <activity android:name=".Absensi.AbsensiPerkelasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Absensi.AbsensiDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Absensi.AbsensiInsertActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Penilaian -->
+        <activity android:name=".Penilaian.PenilaianPersantriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Penilaian.PenilaianDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Penilaian.PenilaianPerkelasActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- Wali Santri -->
+        <activity android:name=".Walisantri.MainWaliActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Walisantri.ProfilDetailWalisantriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Walisantri.ProfilEditWalisantriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Walisantri.HafalanWalisantriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Walisantri.PenilaianWalisantriActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Walisantri.AbsensiWalisantriActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
